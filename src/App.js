@@ -13,7 +13,7 @@ function App() {
       <Home />
       <About />
       <Service />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Badges />
       <Certifications />
       <Contact />

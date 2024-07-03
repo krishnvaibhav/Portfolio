@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/favicon.ico";
 import "../assets/css/themify-icons.css";
 import "../assets/css/bootstrap.css";
@@ -14,6 +14,22 @@ import Button from "@mui/material/Button";
 import { IconButton } from "@mui/material";
 
 const Home = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 500) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div
       className="vg-page page-home"
@@ -27,8 +43,9 @@ const Home = () => {
     >
       {/* Navbar */}
       <div
-        className="navbar navbar-expand-lg navbar-dark sticky"
-        data-offset="500"
+        className={`navbar navbar-expand-lg navbar-dark ${
+          isSticky ? "sticky" : ""
+        }`}
       >
         <div className="container">
           <a href="/" className="navbar-brand">

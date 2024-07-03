@@ -72,7 +72,7 @@
 }
 
 .slider img{
-  height: 300px;
+  height: 200px;
   margin: 0 40px;
 }
 
@@ -88,4 +88,42 @@
   to{
     transform: translateX(-100%);
   }
+}
+
+.evenJustification{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.evenJustification a:hover{
+  transform: scale(1.2);
+}
+
+.skillbox{
+  border: 1px solid #171925;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  background: #f4f5f8;
+  /* width: 70%; */
+  color: #171925;
+}
+
+.skillbox:hover{
+  background: #171925;
+  color: #ffffff;
+}
+
+/* Add this to your CSS file */
+
+.navbar {
+  transition: all 0.3s;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }

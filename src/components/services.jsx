@@ -29,7 +29,8 @@ const Service = () => {
               <div className="caption">
                 <h4 className="fg-theme">Web Development</h4>
                 <p>
-                  There are many variations of passages of Lorem Ipsum available
+                  I can create robust, scalable web applications tailored to
+                  your needs.
                 </p>
               </div>
             </div>
@@ -42,7 +43,8 @@ const Service = () => {
               <div className="caption">
                 <h4 className="fg-theme">Pentesting</h4>
                 <p>
-                  There are many variations of passages of Lorem Ipsum available
+                  I identify and address security vulnerabilities through
+                  comprehensive penetration testing
                 </p>
               </div>
             </div>
@@ -55,7 +57,8 @@ const Service = () => {
               <div className="caption">
                 <h4 className="fg-theme">App Development</h4>
                 <p>
-                  There are many variations of passages of Lorem Ipsum available
+                  I develop user-friendly and efficient mobile applications
+                  using Flutter.
                 </p>
               </div>
             </div>
@@ -68,7 +71,8 @@ const Service = () => {
               <div className="caption">
                 <h4 className="fg-theme">Tutoring</h4>
                 <p>
-                  There are many variations of passages of Lorem Ipsum available
+                  I offer personalized tutoring services to help you master new
+                  skills inlucing Flutter,Python and react.
                 </p>
               </div>
             </div>
