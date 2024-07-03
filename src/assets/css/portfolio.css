@@ -1,0 +1,91 @@
+/* Example CSS, adapt to your needs */
+.vg-page {
+    padding: 60px 0;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .fw-normal {
+    font-weight: normal;
+  }
+  .filterable-button .btn {
+    margin: 5px;
+  }
+  .gridder {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grid-item {
+    flex: 1 1 calc(33.333% - 10px);
+    margin: 5px;
+  }
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+  .img-caption {
+    text-align: center;
+    padding: 10px;
+  }
+  .img-place {
+    position: relative;
+  }
+  .img-place .img-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  
+.badges{
+  overflow: hidden;
+  padding:60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.badges::before,.badges::after{
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;  
+  content: "";
+  z-index: 2;
+}
+
+.badges::before{
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), #171925);
+}
+
+.badges::after{
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), #171925);
+}
+
+.slider img{
+  height: 300px;
+  margin: 0 40px;
+}
+
+.slider{
+  display: inline-block;
+  animation: slide 35s infinite linear;
+}
+
+@keyframes slide{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
