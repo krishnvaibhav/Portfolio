@@ -8,6 +8,7 @@ import "../assets/vendor/animate/animate.css";
 import "../assets/vendor/owl-carousel/owl.carousel.css";
 import "../assets/vendor/nice-select/css/nice-select.css";
 import "../assets/vendor/fancybox/css/jquery.fancybox.min.css";
+import "../assets/css/mobile.css";
 import CodeIcon from "@mui/icons-material/Code";
 import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
 import PasswordIcon from "@mui/icons-material/Password";

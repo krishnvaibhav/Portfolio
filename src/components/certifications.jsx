@@ -4,6 +4,7 @@ import "../assets/css/themify-icons.css";
 import "../assets/css/bootstrap.css";
 import "../assets/css/virtual.css";
 import "../assets/css/topbar.virtual.css";
+
 import certificate1 from "../assets/img/badges/certificates/Coursera ml course1-1.png";
 import certificate2 from "../assets/img/badges/certificates/Foundation of cyber security-1.png";
 import certificate3 from "../assets/img/badges/certificates/Generative_AI_Certificate-1.png";
@@ -16,18 +17,29 @@ import certificate9 from "../assets/img/badges/certificates/football analytics-1
 import certificate10 from "../assets/img/badges/certificates/html and css-1.png";
 import certificate11 from "../assets/img/badges/certificates/python_swayam-1.png";
 import certificate12 from "../assets/img/badges/certificates/javascript certificate-1.png";
+import certificate13 from "../assets/img/badges/certificates/anz-cert.png";
+import certificate14 from "../assets/img/badges/certificates/sql-cert.png";
+import certificate15 from "../assets/img/badges/certificates/google-cyber.png";
 
 const Certifications = () => {
   const [showAll, setShowAll] = useState(false);
 
   const posts = [
     {
-      image: certificate1,
+      image: certificate15,
       category: "AI/ML",
     },
     {
-      image: certificate2,
-      category: "Cyber Security",
+      image: certificate14,
+      category: "AI/ML",
+    },
+    {
+      image: certificate13,
+      category: "AI/ML",
+    },
+    {
+      image: certificate1,
+      category: "AI/ML",
     },
     {
       image: certificate3,

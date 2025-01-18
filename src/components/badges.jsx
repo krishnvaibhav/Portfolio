@@ -10,6 +10,8 @@ import "../assets/vendor/fancybox/css/jquery.fancybox.min.css";
 import "../assets/css/virtual.css";
 import "../assets/css/topbar.virtual.css";
 import "../assets/css/portfolio.css";
+import "../assets/css/mobile.css";
+
 import Badge1 from "../assets/img/badges/firstfour.svg";
 import Badge2 from "../assets/img/badges/howthewebworks.svg";
 import Badge3 from "../assets/img/badges/linux.svg";

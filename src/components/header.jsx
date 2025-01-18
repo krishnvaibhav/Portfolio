@@ -8,11 +8,14 @@ import "../assets/vendor/animate/animate.css";
 import "../assets/vendor/owl-carousel/owl.carousel.css";
 import "../assets/vendor/nice-select/css/nice-select.css";
 import "../assets/vendor/fancybox/css/jquery.fancybox.min.css";
+import "../assets/css/mobile.css";
 import imagePath from "../assets/img/bg_main_2.jpg";
 import ModeNightIcon from "@mui/icons-material/ModeNight";
-import Button from "@mui/material/Button";
 import { IconButton } from "@mui/material";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
 
+import CodeIcon from "@mui/icons-material/Code";
 const Home = () => {
   const [isSticky, setIsSticky] = useState(false);
 
@@ -30,6 +33,58 @@ const Home = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const [open, setOpen] = React.useState(false);
+
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
+
+  const DrawerList = (
+    <Box
+      sx={{ width: 150, background: "#171925", height: "100%" }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+    >
+      <div className="Drawer">
+        <li>
+          <a href="#home" className="nav-link" data-animate="scrolling">
+            Home
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="#about" className="nav-link" data-animate="scrolling">
+            About
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="#portfolio" className="nav-link" data-animate="scrolling">
+            Portfolio
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="#services" className="nav-link" data-animate="scrolling">
+            Services
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#certifications"
+            className="nav-link"
+            data-animate="scrolling"
+          >
+            Certifications
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="#contact" className="nav-link" data-animate="scrolling">
+            Contact
+          </a>
+        </li>
+      </div>
+    </Box>
+  );
+
   return (
     <div
       className="vg-page page-home"
@@ -51,12 +106,18 @@ const Home = () => {
           <a href="/" className="navbar-brand">
             PORTFOLIO
           </a>
+          <div>
+            <Drawer open={open} anchor="right" onClose={toggleDrawer(false)}>
+              {DrawerList}
+            </Drawer>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#main-navbar"
             aria-expanded="true"
+            onClick={toggleDrawer(true)}
           >
             <span className="ti-menu"></span>
           </button>
@@ -112,7 +173,7 @@ const Home = () => {
             <ul className="nav ml-auto">
               <li className="nav-item">
                 <IconButton aria-label="Dark Mode">
-                  <ModeNightIcon />
+                  <CodeIcon />
                 </IconButton>
               </li>
             </ul>

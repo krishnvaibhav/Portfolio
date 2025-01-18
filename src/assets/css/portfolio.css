@@ -1,4 +1,9 @@
-/* Example CSS, adapt to your needs */
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: #171925;
+}
 .vg-page {
     padding: 60px 0;
   }
@@ -127,4 +132,16 @@
   top: 0;
   width: 100%;
   z-index: 1000;
+}
+
+.Drawer{
+  text-decoration: none;
+  list-style: none;
+}
+
+.Drawer a{
+  margin: 15px;
+  padding: 15px;
+  color: white;
+  text-align: center;
 }

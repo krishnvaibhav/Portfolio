@@ -4,6 +4,7 @@ import "../assets/css/themify-icons.css";
 import "../assets/css/bootstrap.css";
 import "../assets/css/virtual.css";
 import "../assets/css/topbar.virtual.css";
+import "../assets/css/mobile.css";
 import "../assets/vendor/animate/animate.css";
 import "../assets/vendor/owl-carousel/owl.carousel.css";
 import "../assets/vendor/nice-select/css/nice-select.css";
@@ -24,21 +25,21 @@ const Footer = () => {
             <LinkedInIcon sx={{ color: "white", fontSize: 30 }} />
           </a>
           <a
-            href="https://www.linkedin.com/in/krishn-vaibhav-2b0233218"
+            href="https://github.com/krishnvaibhav"
             target="_blank"
             rel="noreferrer"
           >
             <GitHubIcon sx={{ color: "white", fontSize: 30 }} />
           </a>
           <a
-            href="https://www.linkedin.com/in/krishn-vaibhav-2b0233218"
+            href="https://www.instagram.com/rkv_711"
             target="_blank"
             rel="noreferrer"
           >
             <InstagramIcon sx={{ color: "white", fontSize: 30 }} />
           </a>
           <a
-            href="https://www.linkedin.com/in/krishn-vaibhav-2b0233218"
+            href="https://tryhackme.com/p/rkv711"
             target="_blank"
             rel="noreferrer"
           >
@@ -55,7 +56,7 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/krishn-vaibhav-2b0233218"
+            href="https://www.fiverr.com/users/krishnvaibhav"
             target="_blank"
             rel="noreferrer"
           >

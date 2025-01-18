@@ -6,6 +6,7 @@ import work3 from "../assets/img/work/work-3.jpg";
 import work4 from "../assets/img/work/work-4.jpg";
 import work5 from "../assets/img/work/work-5.jpg";
 import work6 from "../assets/img/work/work-6.jpg";
+import "../assets/css/mobile.css";
 
 const Portfolio = () => {
   const [filter, setFilter] = React.useState("*");
